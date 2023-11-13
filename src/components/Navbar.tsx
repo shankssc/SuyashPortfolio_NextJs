@@ -14,7 +14,7 @@ interface CustomLinkProps {
   href: string;
   title: string;
   className?: string;
-  toggle?: Function;
+  toggle: Function;
 }
 
 const CustomLink: React.FC<CustomLinkProps> = ({href, title, className=""}) => {
