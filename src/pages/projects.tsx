@@ -8,7 +8,7 @@ import TransitionEffect from '@/components/TransitionEffect'
 import { GithubIcon } from '@/components/Icons'
 import Project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
 import Inapp from "../../public/images/projects/j1food.png";
-import lms from "../../public/images/projects/lms.png";
+import lms from "../../public/images/projects/lms2.jpg";
 import wpf from "../../public/images/projects/wpf.png";
 import ecomm from '../../public/images/projects/ecomm.jpg';
 import xinu from '../../public/images/projects/xinu.jpg';

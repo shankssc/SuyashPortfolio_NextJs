@@ -25,8 +25,8 @@ import Storybook from '../../public/images/skills/storybook.png'
 import Webpack from '../../public/images/skills/Webpack.png'
 import Jenkins from '../../public/images/skills/jenkins2.png'
 import Jest from '../../public/images/skills/Jest2.png'
-import Flask from '../../public/images/skills/Flask.png'
-import Tailwind from '../../public/images/skills/Tailwind2.png'
+import Flask from '../../public/images/skills/flask.png'
+import Tailwind from '../../public/images/skills/Tailwind3.jpg'
 /*
 interface SkillProps {
     pic: StaticImageData,
