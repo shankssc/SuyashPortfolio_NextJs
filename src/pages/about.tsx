@@ -10,7 +10,11 @@ import ProfilePic from '../../public/images/profile/developer-pic-3.jpeg'
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
 import Experience from '@/components/Experience'
 
-const AnimatedNums = ({value}) => {
+interface NumProps {
+  value:any;
+}
+
+const AnimatedNums:React.FC<NumProps> = ({value}) => {
   const ref = useRef(null);
 
   const motionValue = useMotionValue(0);
@@ -26,7 +30,7 @@ const AnimatedNums = ({value}) => {
   useEffect(() => {
     springValue.on("change", (latest) => {
       if (ref.current && latest.toFixed(0) <= value) {
-        ref.current.textContent = latest.toFixed(0);
+        ref.current.textContent = (latest as number).toFixed(0);
       }
     })
   }, [springValue, value])

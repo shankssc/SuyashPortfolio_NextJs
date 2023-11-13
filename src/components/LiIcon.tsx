@@ -1,7 +1,11 @@
 import React, {useRef} from 'react'
 import {motion, useScroll} from "framer-motion"
 
-const LiIcon:React.FC = ({reference}) => {
+interface LiIconProps {
+    reference: any;
+  }
+
+const LiIcon:React.FC<LiIconProps> = ({reference}) => {
     const {scrollYProgress} = useScroll(
         {
             target: reference,
