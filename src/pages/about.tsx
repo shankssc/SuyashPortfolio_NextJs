@@ -29,8 +29,8 @@ const AnimatedNums:React.FC<NumProps> = ({value}) => {
 
   useEffect(() => {
     springValue.on("change", (latest) => {
-      if (ref.current && latest.toFixed(0) <= value) {
-        ref.current.textContent = (latest as number).toFixed(0);
+      if (ref.current && 'textContent' in ref.current) {
+        (ref.current as HTMLSpanElement).textContent = (latest as number).toFixed(0);
       }
     })
   }, [springValue, value])
